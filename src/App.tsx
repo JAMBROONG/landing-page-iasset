@@ -498,6 +498,7 @@ function App() {
             </div>
           </div>
         </section>
+        
         {/* <!-- FAQ section --> */}
         {/* <section className="w-full my-24">
           <BaseSection>

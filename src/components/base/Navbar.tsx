@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavLink from "../NavLink";
+// import NavLink from "../NavLink";
 import BaseButton from "./Button";
 
 const Navbar = () => {
