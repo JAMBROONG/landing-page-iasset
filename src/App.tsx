@@ -5,7 +5,6 @@ import DefaultLayout from "./layouts/default";
 import BaseButton from "./components/base/Button";
 import BaseLink from "./components/base/Link";
 import BaseSection from "./components/base/Section";
-// import BaseAccordion from "./components/base/Accordion";
 import LandingListXItem from "./components/landing/ListXitem";
 import LandingListItem from "./components/landing/ListItem";
 import LandingStep from "./components/landing/Step";
@@ -327,7 +326,6 @@ function App() {
                     dengan cara yang paling efisien.
                   </p>
                 </div>
-
               </BaseSection>
 
             </div>

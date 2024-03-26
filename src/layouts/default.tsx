@@ -10,7 +10,7 @@ const Default: React.FC<SlotComponentProps> = ({ children }) =>  {
   return (
     <div className="min-h-screen font-sans antialiased relative">
       <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-[100vh] sm:h-[225vh] lg:h-[100vh] cover-gradient-2 sm:cover-gradient"></div>
+        <div className="absolute top-0 left-0 w-full h-[620px] sm:h-[225vh] lg:h-[620px] cover-gradient-2 sm:cover-gradient"></div>
         <Navbar />
          
          {/* Content */}
