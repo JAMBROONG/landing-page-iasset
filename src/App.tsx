@@ -3,8 +3,9 @@ import React from "react";
 import DefaultLayout from "./layouts/default";
 // Components
 import BaseButton from "./components/base/Button";
+import BaseLink from "./components/base/Link";
 import BaseSection from "./components/base/Section";
-import BaseAccordion from "./components/base/Accordion";
+// import BaseAccordion from "./components/base/Accordion";
 import LandingListXItem from "./components/landing/ListXitem";
 import LandingListItem from "./components/landing/ListItem";
 import LandingStep from "./components/landing/Step";
@@ -33,28 +34,6 @@ function App() {
     },
   ];
 
-  const accordions = [
-    {
-      title: "Why should I choose NEFA?",
-      description:
-        "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-    },
-    {
-      title: "How secure is NEFA?",
-      description:
-        "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-    },
-    {
-      title: "Do I have to buy a whole Bitcoin?",
-      description:
-        "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-    },
-    {
-      title: "How do I actually buy Bitcoin?",
-      description:
-        "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-    },
-  ];
 
   return (
     <div className="App">
@@ -385,31 +364,156 @@ function App() {
                     <b className="text-lg">Fitur Unggulan:</b>
                     <ul className="space-y-8 sm:space-y-4 mt-5">
                       <LandingListItem title="Pengajuan pengadaan aset.">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Fitur pengajuan pengadaan aset memungkinkan pengguna
+                          untuk dengan mudah mengajukan permohonan untuk mendapatkan aset yang diperlukan untuk operasi bisnis. Dengan fitur ini,
+                          pengguna dapat mengisi formulir pengajuan, melampirkan dokumen pendukung seperti justifikasi pengadaan
+                          atau penawaran harga, dan mengirimkan permohonan mereka untuk persetujuan.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga memfasilitasi proses persetujuan dengan menyediakan
+                          alur kerja yang dapat ditentukan pengguna. Manajer atau pemegang keputusan yang berwenang dapat melihat pengajuan
+                          pengadaan, meninjau informasi yang terkait, dan menyetujui atau menolak pengajuan tersebut secara langsung melalui platform.
+                        </p>
+                        <BaseSection>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point1.png")} alt="" />
+                          </div>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point1(1).png")} alt="" />
+                          </div>
+                        </BaseSection>
                       </LandingListItem>
                       <LandingListItem title="Klasifikasi dan pengelompokkan aset sesuai dengan peraturan perpajakan secara otomatis.">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Aplikasi iAsset ini juga dilengkapi dengan kemampuan klasifikasi dan pengelompokkan aset secara otomatis sesuai
+                          dengan peraturan perpajakan yang berlaku. Dengan fitur ini, pengguna tidak perlu lagi secara manual menentukan
+                          klasifikasi aset atau mengelompokkannya berdasarkan persyaratan pajak yang kompleks.
+                        </p>
+                        <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point2.png")} alt="" />
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Fitur ini tidak hanya menghemat waktu dan upaya pengguna dalam menangani proses klasifikasi aset,
+                          tetapi juga membantu memastikan kepatuhan pajak yang lebih baik dan mengurangi risiko kesalahan pelaporan.
+                          Dengan demikian, pengguna dapat fokus pada kegiatan bisnis inti mereka tanpa khawatir tentang kepatuhan pajak yang
+                          terkait dengan pengadaan dan pengelolaan aset.
+                        </p>
                       </LandingListItem>
                       <LandingListItem title="Pengkodefikasian dan cetak QR-Code aset">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Proses pengkodefikasian QR-Code dilakukan secara otomatis setelah aset disetujui,
+                          sehingga memungkinkan pengguna untuk dengan cepat mengidentifikasi dan melacak aset secara efisien.
+                          QR-Code ini dapat dipindai menggunakan perangkat mobile atau pemindai QR-Code untuk langsung mengakses
+                          informasi terkait aset, seperti spesifikasi, lokasi, status, dan riwayat pemeliharaan.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga menyediakan kemampuan untuk mencetak QR-Code
+                          langsung dari aplikasi, memudahkan pengguna untuk menempelkan QR-Code pada aset secara fisik.
+                          Dengan demikian, proses pencatatan dan pelacakan aset dapat dilakukan dengan lebih akurat dan efisien,
+                          serta meminimalkan risiko kehilangan atau kekeliruan identifikasi.
+                        </p>
+                        <BaseSection>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point3.png")} alt="" />
+                          </div>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point3(1).png")} alt="" />
+                          </div>
+                        </BaseSection>
                       </LandingListItem>
                       <LandingListItem title="Otomatisasi penghitungan penyusutan berdasarkan perpajakan">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Proses penghitungan penyusutan dilakukan secara otomatis berdasarkan metode penyusutan
+                          yang telah ditentukan sebelumnya, seperti metode garis lurus atau metode saldo menurun pada periode tahunan maupun bulanan, yang sesuai
+                          dengan ketentuan perpajakan yang berlaku. Fitur ini memastikan bahwa pengguna tidak perlu lagi melakukan
+                          perhitungan penyusutan secara manual, yang seringkali memakan waktu dan rentan terhadap kesalahan. Dengan
+                          otomatisasi ini, pengguna dapat menghemat waktu dan upaya dalam mengelola proses penyusutan aset, sementara
+                          tetap memastikan kepatuhan terhadap peraturan perpajakan yang berlaku saat ini.
+                        </p>
+                        <BaseSection>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point4.png")} alt="" />
+                          </div>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point4(1).png")} alt="" />
+                          </div>
+                        </BaseSection>
                       </LandingListItem>
                       <LandingListItem title="Monitoring aset">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Fitur monitoring aset mencakup pelaporan kerusakan dan pemeliharaan aset. Fitur ini
+                          memungkinkan pengguna untuk dengan mudah melacak riwayat kerusakan, perbaikan, dan
+                          pemeliharaan yang telah dilakukan pada setiap aset yang dimiliki perusahaan.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga memungkinkan pengguna untuk menjadwalkan
+                          dan melacak kegiatan pemeliharaan preventif secara berkala. Pengguna dapat mengatur jadwal
+                          pemeliharaan rutin untuk setiap aset dan menerima notifikasi otomatis ketika pemeliharaan
+                          perlu dilakukan. Setelah pemeliharaan selesai, pengguna dapat membuat catatan tentang
+                          pekerjaan yang telah dilakukan.
+                        </p>
+                        <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point5.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Pemanfaatan aset">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat mencatat permintaan penyewaan aset dari
+                          pihak luar, termasuk detail seperti jenis aset yang disewakan, lama waktu sewa, disposisi aset yang akan digunakan.
+                          Setelah permintaan diterima, pengguna dapat menggunakan fitur penjadwalan untuk mengatur
+                          jadwal penggunaan aset dan memastikan ketersediaan aset yang sesuai.
+                        </p>
+                        <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point6.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Pelaporan aset">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Melalui fitur pelaporan aset, pengguna dapat menghasilkan laporan secara real-time 
+                          atau berdasarkan rentang waktu tertentu sesuai kebutuhan. Laporan dapat disesuaikan dengan filter 
+                          dan parameter tertentu, sehingga pengguna dapat memilih informasi yang relevan untuk disertakan dalam 
+                          laporan.
+                        </p>
+                        <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point7.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Penghapusan aset">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat dengan mudah mencatat aset yang akan dihapus 
+                          dari inventaris. Pengguna dapat menentukan alasan penghapusan, seperti kerusakan yang tidak dapat 
+                          diperbaiki, usia aset yang sudah tua, atau aset yang sudah tidak relevan lagi untuk kebutuhan 
+                          operasional perusahaan.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga memungkinkan pengguna untuk mengatur pencatatan 
+                          dan dokumentasi yang lengkap terkait dengan penghapusan aset, termasuk catatan tentang nilai 
+                          aset saat dihapus, tanggal penghapusan, dan alasan penghapusan. Hal ini penting untuk menjaga 
+                          kepatuhan dengan peraturan perpajakan dan akuntansi yang berlaku.
+                        </p>
+                        <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point8.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Pelaporan Rencana dan Realisasi Sisa Lebih (khusus Entitas Nirlaba)">
-                        {''}
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat membuat rencana pengeluaran dana yang 
+                          diharapkan untuk kegiatan atau proyek tertentu dalam periode waktu tertentu. Rencana ini mencakup 
+                          alokasi dana untuk berbagai tujuan, seperti pemeliharaan aset, pengadaan peralatan, program 
+                          pengembangan, dan lain sebagainya. Pengguna dapat menentukan target atau sasaran yang ingin dicapai 
+                          dengan pengeluaran dana tersebut.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Setelah rencana disusun, fitur ini memungkinkan pengguna untuk memantau dan melacak 
+                          realisasi pengeluaran dana yang telah dilakukan. Pengguna dapat membandingkan realisasi dengan rencana 
+                          yang telah dibuat untuk mengevaluasi kinerja keuangan dan memastikan bahwa pengeluaran dana sesuai 
+                          dengan tujuan yang ditetapkan.
+                        </p>
+                        <p className="paragraph text-justify ml-7">
+                          &nbsp;&nbsp;&nbsp;Fitur ini juga dapat menyediakan laporan yang mencakup detail tentang 
+                          rencana dan realisasi sisa lebih dana, termasuk perbandingan antara rencana dan realisasi, 
+                          analisis varian, dan informasi lainnya yang relevan. Laporan ini dapat digunakan untuk pelaporan 
+                          kepada pihak yang berkepentingan, seperti dewan pengawas, donor, atau pihak yang memberikan hibah.
+                        </p>
+                        <BaseSection>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point9.png")} alt="" />
+                          </div>
+                          <div className="col-span-6">
+                            <img className="mx-auto w-[100%]" src={require("./assets/img/fitur-iasset/point10.png")} alt="" />
+                          </div>
+                        </BaseSection>
                       </LandingListItem>
                     </ul>
                   </p>
@@ -461,7 +565,7 @@ function App() {
           </div>
         </section>
 
-        <section className="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
+        <section className="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 mt-24 mb-10 shadow sm:rounded-2xl overflow-hidden">
           <div className="w-full py-16 flex flex-col items-center">
             <h2
               data-aos="flip-down"
@@ -469,15 +573,15 @@ function App() {
             >
               PENAWARAN TERBATAS!
             </h2>
-              <BaseSection data-aos="fade-right">
-                <div className="col-span-12">
-                  <p className="paragraph text-justify mt-5">
-                    Jika Anda melakukan pemesanan maupun berlangganan dengan kami sebelum 15 April 2024,
-                    Anda akan memperoleh paket inhouse training "Strategi Manajemen Aset dengan iAsset
-                    Guna Meningkatkan Produktivitas Entitas Anda" secara GRATIS.
-                  </p>
-                </div>
-              </BaseSection>
+            <BaseSection data-aos="fade-right">
+              <div className="col-span-12">
+                <p className="paragraph text-justify mt-5">
+                  Jika Anda melakukan pemesanan maupun berlangganan dengan kami sebelum 15 April 2024,
+                  Anda akan memperoleh paket inhouse training "Strategi Manajemen Aset dengan iAsset
+                  Guna Meningkatkan Produktivitas Entitas Anda" secara GRATIS.
+                </p>
+              </div>
+            </BaseSection>
             <div
               data-aos="fade-up"
               className="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
@@ -497,8 +601,12 @@ function App() {
               />
             </div>
           </div>
+          <div className="text-center mb-10">
+            <BaseLink href="" classname="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
+              Contact Us Now!
+            </BaseLink>
+          </div>
         </section>
-        
         {/* <!-- FAQ section --> */}
         {/* <section className="w-full my-24">
           <BaseSection>
