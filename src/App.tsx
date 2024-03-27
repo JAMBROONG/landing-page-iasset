@@ -14,19 +14,19 @@ function App() {
 
   const steps = [
     {
-      img: "sign-up.png",
+      img: "HubungiTeamKami.png",
       title: "Hubungi Team Kami",
       description:
         "Bergabunglah dengan IASSET dan tentukan preferensi Anda. Team kami siap sedia untuk melayani Anda.",
     },
     {
-      img: "fund.png",
+      img: "GunakanIASSETuntukManagementAsetAnda.png",
       title: "Gunakan IASSET untuk Management Aset Anda",
       description:
         "Nikmati berbagai fitur pada IASSET yang sudah kami rancang hanya untuk Anda.",
     },
     {
-      img: "buy-crypto.png",
+      img: "InHouseTraining.png",
       title: "Klaim Jadwalkan In House Training Anda!",
       description:
         "Klaim bonus training Anda dan rasakan peningkatan performa entitas Anda!",
@@ -122,7 +122,7 @@ function App() {
             <div className="col-span-12 lg:col-span-5">
               <div className="w-full">
                 <img
-                  src={require("./assets/img/buy-and-trade.webp")}
+                  src={require("./assets/img/KurangnyaVisibilitasAset.png")}
                   className="w-[100%]"
                   alt=""
                 />
@@ -195,7 +195,7 @@ function App() {
             <div data-aos="fade-right" className="col-span-12 lg:col-span-4">
               <div className="w-full">
                 <img
-                  src={require("./assets/img/industry-leading-security.webp")}
+                  src={require("./assets/img/KetidakpastiandalamManajemenInventaris.png")}
                   className="w-full"
                   alt=""
                 />
@@ -229,7 +229,7 @@ function App() {
             <div className="col-span-12 lg:col-span-5 sm:hidden">
               <div className="w-full sm:mt-20 xl:mt-0">
                 <img
-                  src={require(`./assets/img/vector1.png`)}
+                  src={require(`./assets/img/MasalahKepatuhandanRegulasi.png`)}
                   className="w-full"
                   alt=""
                 />
@@ -258,7 +258,7 @@ function App() {
             >
               <div className="w-full sm:mt-20 xl:mt-0">
                 <img
-                  src={require(`./assets/img/vector1.png`)}
+                  src={require(`./assets/img/MasalahKepatuhandanRegulasi.png`)}
                   className="w-full"
                   alt=""
                 />
