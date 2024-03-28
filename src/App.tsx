@@ -584,8 +584,8 @@ function App() {
               data-aos="fade-up"
               className="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
             >
-              {steps.map((step) => {
-                return <LandingStep step={step} />;
+              {steps.map((step, index) => {
+                return <LandingStep step={step} key={index} />;
               })}
               <img
                 src={require("./assets/img/getting-started/arrow.png")}
