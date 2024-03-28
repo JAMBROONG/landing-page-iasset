@@ -2,13 +2,13 @@ import React from "react";
 // Layouts
 import DefaultLayout from "./layouts/default";
 // Components
-import BaseButton from "./components/base/Button";
 import BaseLink from "./components/base/Link";
 import BaseSection from "./components/base/Section";
 import LandingListXItem from "./components/landing/ListXitem";
 import LandingListItem from "./components/landing/ListItem";
 import LandingStep from "./components/landing/Step";
 import BackToTopButton from "./components/base/BackToTopButton";
+import LinkButton from "./components/base/Link";
 
 function App() {
 
@@ -63,9 +63,9 @@ function App() {
                 data-aos-delay="700"
                 className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
               >
-                <BaseButton classname="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
-                  Request Demo
-                </BaseButton>
+                <LinkButton href="/contact" classname="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
+                  Hubungi Kami
+                </LinkButton>
               </div>
             </div>
             <div className="hidden sm:block col-span-12 lg:col-span-5">
@@ -462,46 +462,46 @@ function App() {
                       </LandingListItem>
                       <LandingListItem title="Pelaporan aset">
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Melalui fitur pelaporan aset, pengguna dapat menghasilkan laporan secara real-time 
-                          atau berdasarkan rentang waktu tertentu sesuai kebutuhan. Laporan dapat disesuaikan dengan filter 
-                          dan parameter tertentu, sehingga pengguna dapat memilih informasi yang relevan untuk disertakan dalam 
+                          &nbsp;&nbsp;&nbsp;Melalui fitur pelaporan aset, pengguna dapat menghasilkan laporan secara real-time
+                          atau berdasarkan rentang waktu tertentu sesuai kebutuhan. Laporan dapat disesuaikan dengan filter
+                          dan parameter tertentu, sehingga pengguna dapat memilih informasi yang relevan untuk disertakan dalam
                           laporan.
                         </p>
                         <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point7.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Penghapusan aset">
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat dengan mudah mencatat aset yang akan dihapus 
-                          dari inventaris. Pengguna dapat menentukan alasan penghapusan, seperti kerusakan yang tidak dapat 
-                          diperbaiki, usia aset yang sudah tua, atau aset yang sudah tidak relevan lagi untuk kebutuhan 
+                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat dengan mudah mencatat aset yang akan dihapus
+                          dari inventaris. Pengguna dapat menentukan alasan penghapusan, seperti kerusakan yang tidak dapat
+                          diperbaiki, usia aset yang sudah tua, atau aset yang sudah tidak relevan lagi untuk kebutuhan
                           operasional perusahaan.
                         </p>
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga memungkinkan pengguna untuk mengatur pencatatan 
-                          dan dokumentasi yang lengkap terkait dengan penghapusan aset, termasuk catatan tentang nilai 
-                          aset saat dihapus, tanggal penghapusan, dan alasan penghapusan. Hal ini penting untuk menjaga 
+                          &nbsp;&nbsp;&nbsp;Selain itu, fitur ini juga memungkinkan pengguna untuk mengatur pencatatan
+                          dan dokumentasi yang lengkap terkait dengan penghapusan aset, termasuk catatan tentang nilai
+                          aset saat dihapus, tanggal penghapusan, dan alasan penghapusan. Hal ini penting untuk menjaga
                           kepatuhan dengan peraturan perpajakan dan akuntansi yang berlaku.
                         </p>
                         <img className="mx-auto w-[50%]" src={require("./assets/img/fitur-iasset/point8.png")} alt="" />
                       </LandingListItem>
                       <LandingListItem title="Pelaporan Rencana dan Realisasi Sisa Lebih (khusus Entitas Nirlaba)">
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat membuat rencana pengeluaran dana yang 
-                          diharapkan untuk kegiatan atau proyek tertentu dalam periode waktu tertentu. Rencana ini mencakup 
-                          alokasi dana untuk berbagai tujuan, seperti pemeliharaan aset, pengadaan peralatan, program 
-                          pengembangan, dan lain sebagainya. Pengguna dapat menentukan target atau sasaran yang ingin dicapai 
+                          &nbsp;&nbsp;&nbsp;Melalui fitur ini, pengguna dapat membuat rencana pengeluaran dana yang
+                          diharapkan untuk kegiatan atau proyek tertentu dalam periode waktu tertentu. Rencana ini mencakup
+                          alokasi dana untuk berbagai tujuan, seperti pemeliharaan aset, pengadaan peralatan, program
+                          pengembangan, dan lain sebagainya. Pengguna dapat menentukan target atau sasaran yang ingin dicapai
                           dengan pengeluaran dana tersebut.
                         </p>
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Setelah rencana disusun, fitur ini memungkinkan pengguna untuk memantau dan melacak 
-                          realisasi pengeluaran dana yang telah dilakukan. Pengguna dapat membandingkan realisasi dengan rencana 
-                          yang telah dibuat untuk mengevaluasi kinerja keuangan dan memastikan bahwa pengeluaran dana sesuai 
+                          &nbsp;&nbsp;&nbsp;Setelah rencana disusun, fitur ini memungkinkan pengguna untuk memantau dan melacak
+                          realisasi pengeluaran dana yang telah dilakukan. Pengguna dapat membandingkan realisasi dengan rencana
+                          yang telah dibuat untuk mengevaluasi kinerja keuangan dan memastikan bahwa pengeluaran dana sesuai
                           dengan tujuan yang ditetapkan.
                         </p>
                         <p className="paragraph text-justify ml-7">
-                          &nbsp;&nbsp;&nbsp;Fitur ini juga dapat menyediakan laporan yang mencakup detail tentang 
-                          rencana dan realisasi sisa lebih dana, termasuk perbandingan antara rencana dan realisasi, 
-                          analisis varian, dan informasi lainnya yang relevan. Laporan ini dapat digunakan untuk pelaporan 
+                          &nbsp;&nbsp;&nbsp;Fitur ini juga dapat menyediakan laporan yang mencakup detail tentang
+                          rencana dan realisasi sisa lebih dana, termasuk perbandingan antara rencana dan realisasi,
+                          analisis varian, dan informasi lainnya yang relevan. Laporan ini dapat digunakan untuk pelaporan
                           kepada pihak yang berkepentingan, seperti dewan pengawas, donor, atau pihak yang memberikan hibah.
                         </p>
                         <BaseSection>
@@ -600,8 +600,8 @@ function App() {
             </div>
           </div>
           <div className="text-center mb-10">
-            <BaseLink href="" classname="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
-              Contact Us Now!
+            <BaseLink href="/contact" classname="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white">
+              Hubungi Kami Sekarang!
             </BaseLink>
           </div>
         </section>

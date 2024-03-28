@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import NavLink from "../NavLink";
-import BaseButton from "./Button";
+import LinkButton from "./Link";
 
 const Navbar = () => {
   const [open, setOpen] = useState<Boolean>(false);
@@ -62,9 +62,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={`${open ? "flex" : "hidden lg:flex"} space-x-3`}>
-          <BaseButton classname="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
+          <LinkButton href="/contact" classname="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
             Contact Us
-          </BaseButton>
+          </LinkButton>
         </div>
       </div>
     </nav>

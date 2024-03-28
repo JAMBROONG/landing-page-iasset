@@ -6,7 +6,7 @@ interface SlotComponentProps {
 
 const BaseSection: React.FC<SlotComponentProps> = ({ children }) => {
     return (
-        <div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden">
+        <div className="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-5 overflow-hidden">
             { children }
         </div>
     )
